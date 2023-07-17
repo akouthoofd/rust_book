@@ -33,4 +33,10 @@ fn main() {
     let square = Shapes::square(50);
 
     dbg!(rect.area(), rect.sides(), circle.area(), circle.sides(), square.area(), square.sides());
+
+    let s1 = String::from("Hello, ");
+    let s2 = String::from("world!");
+    let s3 = s2 + &s1; // note s1 has been moved here and can no longer be used
+    println!("{s3}");
+    println!("{s3}");
 }
